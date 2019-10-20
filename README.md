@@ -19,7 +19,8 @@ Also add the following code `providers: [Camera]` in providers array in `app.mod
 
 * Now in your componet's ts file add the following code-
 
-`import { Component } from '@angular/core';
+```
+import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 
@@ -46,11 +47,13 @@ export class HomePage {
       console.log('Error Meaasge',err);
     });
   }
-}`
+}
+```
 
 * Now in your componet's html file add the following code-
 
-`<ion-header>
+```
+<ion-header>
   <ion-navbar color="primary">
     <ion-title>
       Ionic Camera
@@ -61,4 +64,5 @@ export class HomePage {
 <ion-content padding>
   <button ion-button (click)="captureImage()" full>Take Photo</button>
   <img src="{{capturedImage}}" alt="Image" *ngIf="capturedImage">
-</ion-content>`
+</ion-content>
+```

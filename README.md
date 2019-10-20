@@ -9,8 +9,8 @@ This is a simple ionic app implemented using ionic native plugin for learning pu
 
 `npm install @ionic-native/camera@4.20.0`
 
-* Now in <h3>app.module.ts</h3> file include the following line-
+* Now in `app.module.ts` file include the following line-
 
 `import { Camera } from '@ionic-native/camera'`
 
-Also add the following code <h3>providers[Camera]</h3> in providers array
+Also add the following code `providers: [Camera]` in providers array
